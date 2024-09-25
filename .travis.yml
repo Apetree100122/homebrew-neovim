@@ -1,13 +1,16 @@
 language: objective-c
 env:
   matrix:
-    - FORMULA_VERSION=
-    - FORMULA_VERSION=--HEAD
+    - FORMULA
+    _VERSION==  
+    --HEAD
 rvm: system
 before_install:
-  - brew update
-  - brew --env
-  - brew config
+  - brew 
+  update - brew
+  --env
+- brew 
+config
 install:
   - mkdir -p $(brew --repo)/Library/Taps/neovim
   - ln -s $TRAVIS_BUILD_DIR $(brew --repo)/Library/Taps/neovim/homebrew-neovim
